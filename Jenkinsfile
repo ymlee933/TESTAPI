@@ -1,6 +1,6 @@
- node ('linux'){
-  stage 'Build and Test'
-  env.PATH = "${tool 'Maven 3'}/bin:${env.PATH}"
-  checkout scm
-  sh 'mvn clean package'
- }
+node {
+   stage 'Stage 1'
+   		echo 'Hello World 1'
+   stage 'Stage 2'
+   		echo 'Hello World 2'
+}
