@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+   <title>Welcome to Cyber Vault</title>
+   <link rel="shortcut icon" href="images/icon.ico"/>
+   <head>
+      <link rel="stylesheet" href="src/styles.css">
+      <script src="src/javascript.js"></script>
+   </head>
+   <body>
+      <div data-role="header" data-position="fixed">
+         <img src="images/header-logo.jpeg" style="width:1265px;height:430px">
+      </div>
+      <!--Login form without validation. Validation will be implement-->
+      <div id="loginform" style="color:white">
+         <form name="myloginform" class="loginContainer" method="post" action="https://infs3202-g8oc1.uqcloud.net/index2.html">
+            <fieldset style="width: 330px;">
+               <legend>Log In</legend>
+               <label>Email (Login ID): </label>
+               <input type="text" name="loginloginid" id="loginloginid"><br>
+               <label>Password : </label>
+               <input type="password" name="loginpassword" id="loginpassword"><br>
+               <input type="checkbox" name="savelogin" value="save">Keep me logged in<br>
+               <a href="index2.html"style="width: 320px;" id="loginbuttonss">Log In!<a>
+            </fieldset>
+         </form>
+      </div>
+      <div>
+         <div>
+            <img src="images/sidebar-extra-bg.jpg" style="float:left" height="450" width="450">
+         </div>
+         <div id="signupform">
+            <section id="intro" align="center"><br>Welcome to Cyber Vault, your secured virtual storage. 
+               <br> Sign up now for a free 10GB* of online storage! 
+            </section>
+            <!--Sign up form with javascript validation-->
+            <form name="myForm" class="container" onsubmit="return validateForm()" method="post">
+               <fieldset style="width: 330px;">
+                  <legend>Sign Up</legend>
+                  <label>Email (Login ID): </label>
+                  <input type="text" name="loginid">
+                  <img id="valid1" src="images/wrongx.png" height="8" width="8" title="Please enter a valid Email" style="visibility: hidden;"><br>
+                  <label>First name: </label>
+                  <input type="text" name="firstname">
+                  <img id="valid2" src="images/wrongx.png" height="8" width="8" title="Please enter your First Name" style="visibility: hidden;"><br>
+                  <label>Last name: </label>
+                  <input type="text" name="lastname">
+                  <img id="valid3" src="images/wrongx.png" height="8" width="8" title="Please enter your Last Name" style="visibility: hidden;"><br>
+                  <label> Password: </label>
+                  <input type="password" name="password_1">
+                  <img id="valid4" src="images/wrongx.png" height="8" width="8" title="Please enter a valid Password" style="visibility: hidden;"<br>
+                  <label>Confirm Password: </label>
+                  <input type="password" name="password_1">
+                  <img id="valid5" src="images/wrongx.png" height="8" width="8" title="Please ensure that your Password matches" style="visibility: hidden;"><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <input type="radio" name="gender" value="male"> Male
+                  <input type="radio" name="gender" value="female"> Female
+                  <img id="valid6" src="images/wrongx.png" height="8" width="8" title="Please choose a Gender" style="visibility: hidden;"><br>
+                  <input type="image" src="images/createacc.jpeg" alt="Submit Form" style="width: 320px;"/>
+               </fieldset>
+            </form>
+         </div>
+         <div id="getter">
+            <p align="center">Get the app.</p>
+            <a href="https://itunes.apple.com/au/genre/ios/id36?mt=8"> 
+            <img src="images/astore.png" height="38" width="120">
+            </a>
+            <a href="https://play.google.com/store?hl=en">
+            <img src="images/gplay.png" height="38" width="120">
+            </a>
+         </div>
+         <div><img src="images/footerbreak.jpg" style="float:left" height="10" width="1265"></div>
+         <div data-role="footer" data-position="fixed">
+            <img src="images/footer-bg.jpg" style="width:1265px;height:125px;">
+         </div>
+      </div>
+   </body>
+</html>
